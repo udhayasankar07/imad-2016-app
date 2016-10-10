@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var mySite={
-   titles:'Gadgets'
+   titles:'Gadgets',
     heading:'Galaxy J7',
     date:'oct 10 2016',
     content: `
