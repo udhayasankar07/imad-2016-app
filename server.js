@@ -83,6 +83,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/:newudhaya', function (req, res) {
+    var newudhaya=req.params.newudhaya;
   res.send(createTemplate(myFile[newudhaya]));
 });
 
