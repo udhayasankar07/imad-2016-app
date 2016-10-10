@@ -4,8 +4,10 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var myFile={
+    
 
-var mySite={
+ mySite:{
    
     heading:'Galaxy J7',
     date:'oct 10 2016',
@@ -15,6 +17,20 @@ var mySite={
 
                    The new Samsung J-series handset will easily compete with current favourites such as the Motorola Moto X Play and Lenovo Vibe X3. The Galaxy J7 Prime however faces its biggest challenge with the launch of the Lenovo Z2 Plus which packs a flagship-grade Snapdragon 820 processor and starts at a price of Rs. 17,999.
                </p>`
+},
+
+mySite1:{
+    
+    heading:'One plus 3',
+    date:'oct 08 2016',
+    content: `
+               <p>
+                The OnePlus 3 is another amazing smartphone from the Chinese company as easily its best effort yet. It's a little bit more expensive than its predecessor but it's still a ridiculous price considering the design, build and hardware on offer which matches rivals but also beats them in some areas. There's very little to dislike here unless you really need things like expandable storage and waterproofing. You don't even need an invite any longer, either.
+               </p>`
+    
+}
+
+
 }
 function createTemplate(data)
 {
@@ -66,13 +82,11 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/udhaya', function (req, res) {
-  res.send(createTemplate(mySite));
+app.get('/:newudhaya', function (req, res) {
+  res.send(createTemplate(myFile[newudhaya]));
 });
 
-app.get('/udhaya1', function (req, res) {
-  res.sendfile(path.join(__dirname,'ui','udhaya1.html'));
-});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
