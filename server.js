@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var mySite={
-   titles:'Gadgets',
+   
     heading:'Galaxy J7',
     date:'oct 10 2016',
     content: `
@@ -18,14 +18,14 @@ var mySite={
 }
 function createTemplate(data)
 {
-    var titles=data.titles;
+    
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
 var htmlTemplate=`
 <html>
     <head>
-       ${titles}
+       <title>Gadgets</title>
         <meta name="viewport" content="width=device-width, initial -scale=1" />
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
