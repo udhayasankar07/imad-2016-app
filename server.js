@@ -31,7 +31,7 @@ mySite1:{
 }
 
 
-}
+};
 function createTemplate(data)
 {
     
