@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var myFile={
     
 
- mySite:{
+ 'mySite':{
    
     heading:'Galaxy J7',
     date:'oct 10 2016',
@@ -19,7 +19,7 @@ var myFile={
                </p>`
 },
 
-mySite1:{
+'mySite1':{
     
     heading:'One plus 3',
     date:'oct 08 2016',
