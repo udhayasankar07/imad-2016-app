@@ -82,9 +82,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/:newudhaya', function (req, res) {
-    var newudhaya=req.params.newudhaya;
-  res.send(createTemplate(myFile[newudhaya]));
+app.get('/:newUdhaya', function (req, res) {
+    var newUdhaya=req.params.newUdhaya;
+  res.send(createTemplate(myFile[newUdhaya]));
 });
 
 
