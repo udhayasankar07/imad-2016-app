@@ -8,28 +8,37 @@ alert("Are you interested in mobiles");
             
             image.onclick=function()
             {
+               if(marginleft<=500)
                
                 var interval=setInterval(moveRight,800);
                 
-                
+                else
+                 var interval1=setInterval(moveLeft,800);
                 
             }
             function moveRight()
             {
                
-                if(marginleft<500)
-                {
+               
                 marginleft=marginleft+10;
             image.style.marginLeft=marginleft+'px';
-                }
-                else
-                {
+                
+               
+                
+                
+            }
+           function moveLeft()
+            {
+               
+               
+               
+                
+              
                      marginleft=marginleft-10;
-            image.style.marginRight=marginleft+'px';
-                }
+            image.style.marginLeft=marginleft+'px';
+                
                 
                 
                 
                 
             }
-           
