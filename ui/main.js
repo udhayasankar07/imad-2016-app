@@ -25,7 +25,7 @@ alert("Are you interested in mobiles");
                 else
                 {
                      marginleft=marginleft-10;
-            image.style.marginLeft=marginleft+'px';
+            image.style.marginRight=marginleft+'px';
                 }
                 
                 
