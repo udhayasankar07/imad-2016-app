@@ -6,7 +6,7 @@ alert("Are you interested in mobiles");
             var marginleft=0;
             image.onclick=function()
             {
-                var interval=setInterval(moveRight,50);
+                var interval=setInterval(moveRight,500);
                 
             }
             function moveRight()
