@@ -82,6 +82,10 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
 app.get('/:newUdhaya', function (req, res) {
     var newUdhaya=req.params.newUdhaya;
   res.send(createTemplate(myFile[newUdhaya]));
