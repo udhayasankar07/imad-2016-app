@@ -4,11 +4,11 @@ alert("Are you interested in mobiles");
             element.innerHTML='Gadgets Wala'
             
             var marginleft=0;
-            var marginright=1000;
+            var marginright=100;
             
             image.onclick=function()
             {
-                if(marginleft<1000)
+                if(marginleft<100)
                 var interval=setInterval(moveRight,100);
                 else
                   var interval1=setInterval(moveLeft,100);
