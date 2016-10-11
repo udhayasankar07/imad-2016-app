@@ -4,6 +4,7 @@ alert("Are you interested in mobiles");
             element.innerHTML='Gadgets Wala'
             
             var marginleft=0;
+            var marginright=500;
             image.onclick=function()
             {
                 
@@ -19,8 +20,8 @@ alert("Are you interested in mobiles");
                 }
                 else
                 {
-                     marginleft=marginleft-10;
-            image.style.marginLeft=marginleft+'px';
+                     marginright=marginright-10;
+            image.style.marginLeft=marginright-'px';
                 }
                 
             }
