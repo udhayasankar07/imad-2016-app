@@ -6,12 +6,12 @@ alert("Are you interested in mobiles");
             var marginleft=0;
             image.onclick=function()
             {
-                var interval=setInterval(moveRight,500);
+                var interval=setInterval(moveRight,50);
                 
             }
             function moveRight()
             {
-                marginleft=marginleft+1;
+                marginleft=marginleft+10;
             image.style.marginLeft=marginleft+'px';
                 
             }
