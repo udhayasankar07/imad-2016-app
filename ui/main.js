@@ -10,17 +10,17 @@ alert("Are you interested in mobiles");
             {
                if(marginleft<=500)
                
-                var interval=setInterval(moveRight,800);
+                var interval=setInterval(moveRight,200);
                 
                 else
-                 var interval1=setInterval(moveLeft,800);
+                 var interval1=setInterval(moveLeft,200);
                 
             }
             function moveRight()
             {
                
                
-                marginleft=marginleft+10;
+                marginleft=marginleft+20;
             image.style.marginLeft=marginleft+'px';
                 
                
