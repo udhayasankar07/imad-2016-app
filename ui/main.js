@@ -17,7 +17,7 @@ alert("Are you interested in mobiles");
             function moveRight()
             {
                
-                if(marginleft<100)
+                if(marginleft<500)
                 {
                 marginleft=marginleft+10;
             image.style.marginLeft=marginleft+'px';
