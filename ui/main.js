@@ -17,9 +17,17 @@ alert("Are you interested in mobiles");
             function moveRight()
             {
                
-                
+                if(marginleft<100)
+                {
                 marginleft=marginleft+10;
             image.style.marginLeft=marginleft+'px';
+                }
+                else
+                {
+                     marginleft=marginleft-10;
+            image.style.marginLeft=marginleft+'px';
+                }
+                
                 
                 
                 
