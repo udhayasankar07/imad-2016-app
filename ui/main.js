@@ -13,15 +13,15 @@ alert("Are you interested in mobiles");
             }
             function moveRight()
             {
-                if(marginleft<500)
+                if(marginleft<1000)
                 {
                 marginleft=marginleft+10;
             image.style.marginLeft=marginleft+'px';
                 }
                 else
                 {
-                     marginright=marginright-10;
-            image.style.marginLeft=marginright-'px';
+                     marginleft=marginleft-10;
+            image.style.marginLeft=marginleft+'px';
                 }
                 
             }
