@@ -1,11 +1,11 @@
 console.log('Loaded!');
-alert("Are you interested in mobiles");
+
             var element=document.getElementById('main')
             element.innerHTML='Gadgets Wala'
             
             var marginleft=0;
           
-           
+           var image=document.getElementById('image')
             
             image.onclick=function()
             {
