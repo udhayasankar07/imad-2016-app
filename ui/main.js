@@ -29,4 +29,14 @@ console.log('Loaded!');
                 
                 
             }
+            var countelement=0;
+            var count=document.getElementByID('count');
+            var counter=document.getElementByID('counter');
+            counter.onClick=function()
+            {
+                countelement=countelement+1;
+                count.innerHtml=countelement;
+                
+            };
+            
            
