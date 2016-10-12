@@ -1,11 +1,11 @@
 console.log('Loaded!');
 
-            var element=document.getElementById('main')
-            element.innerHTML='Gadgets Wala'
+            var element=document.getElementById('main');
+            element.innerHTML='Gadgets Wala';
             
             var marginleft=0;
           
-           var image=document.getElementById('image')
+           var image=document.getElementById('image');
             
             image.onclick=function()
             {
@@ -15,7 +15,7 @@ console.log('Loaded!');
                 
                 
                 
-            }
+            };
             function moveRight()
             {
                
