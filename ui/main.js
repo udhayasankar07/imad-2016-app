@@ -30,8 +30,8 @@ console.log('Loaded!');
                 
             }
             var countelement=0;
-            var count=document.getElementByID('count');
-            var counter=document.getElementByID('counter');
+            var count=document.getElementById('count');
+            var counter=document.getElementById('counter');
             counter.onClick=function()
             {
                 countelement=countelement+1;
