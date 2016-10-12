@@ -1,7 +1,9 @@
 console.log('Loaded!');
 
-            var element=document.getElementById('main');
-            element.innerHTML='Gadgets Wala';
+          //  var element=document.getElementById('main');
+            //element.innerHTML='Gadgets Wala';
+            //<script type="text/javascript" src="/ui/main.js">
+        //</script> //use this above two lines in index.html
             
             var marginleft=0;
           
