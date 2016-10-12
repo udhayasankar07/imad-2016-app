@@ -1,30 +1,20 @@
-console.log('Loaded!');
-
-            var element=document.getElementById('main')
-            element.innerHTML='Gadgets Wala'
-            
-            var marginleft=0;
-          
-           var image=document.getElementById('image')
-            
-            image.onclick=function()
-            {
-              
-               
-                var interval=setInterval(moveRight,1000);
-                
-                
-                
-            }
-            function moveRight()
-            {
-               
-               
-                marginleft=marginleft+20;
-            image.style.marginLeft=marginleft+'px';
-                
-               
-                
-                
-            }
-           
+<!doctype html>
+<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div class="container">
+        <div id="main" class="center text-big bold">
+           Gadgets
+           </div>
+        <div id="image" class="center">
+            <img src="https://pbs.twimg.com/profile_images/786041309458903040/617926CS.jpg" class="img-medium"/>
+        </div>
+        </div>
+       
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
+</html>
