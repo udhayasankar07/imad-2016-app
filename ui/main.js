@@ -35,7 +35,7 @@ console.log('Loaded!');
             counter.onClick=function()
             {
                 countelement=countelement+1;
-                span.innerHtml=countelement;
+                count.innerHtml=countelement;
                 
             };
             
