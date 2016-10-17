@@ -83,7 +83,7 @@ console.log('Loaded!');
                 };
                 
                 request.open('GET','http://udhayasankar07.imad.hasura-app.io/submit-name?name='+name,true);
-               // request.send(null);
+                request.send(null);
                 
                 
                
