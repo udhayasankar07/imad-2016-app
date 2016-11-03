@@ -13,34 +13,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-var myFile={
-    
 
- 'udhaya':{
-   
-    heading:'Galaxy J7',
-    date:'oct 10 2016',
-    content: `
-               <p>
-                The Samsung Galaxy J7 Prime has been launched in India at a price of Rs. 18,790 and is now available at various retail stores. It has a lot of features such as a metal body, large 3300mAh battery, S Power Planning, and superb screen. S Power Planning and Secure Folder are both neat value additions in software. Despite featuring a large 5.5-inch screen, the J7 Prime is easy to manage. At this price point, the phone is pleasure to use.
-
-                   The new Samsung J-series handset will easily compete with current favourites such as the Motorola Moto X Play and Lenovo Vibe X3. The Galaxy J7 Prime however faces its biggest challenge with the launch of the Lenovo Z2 Plus which packs a flagship-grade Snapdragon 820 processor and starts at a price of Rs. 17,999.
-               </p>`
-},
-
-'udhaya1':{
-    
-    heading:'One plus 3',
-    date:'oct 08 2016',
-    content: `
-               <p>
-                The OnePlus 3 is another amazing smartphone from the Chinese company as easily its best effort yet. It's a little bit more expensive than its predecessor but it's still a ridiculous price considering the design, build and hardware on offer which matches rivals but also beats them in some areas. There's very little to dislike here unless you really need things like expandable storage and waterproofing. You don't even need an invite any longer, either.
-               </p>`
-    
-}
-
-
-};
 function createTemplate(data)
 {
     
