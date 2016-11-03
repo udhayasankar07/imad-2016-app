@@ -28,7 +28,7 @@ var htmlTemplate=`
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
     
-    <body background="http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSwatches_1400x900.jpg">
+    <body background="http://1.bp.blogspot.com/-VdULbSGJ3I8/UBuq3kI0ChI/AAAAAAAAAxo/4m0VqJvsBFY/s1600/web-page-backgrounds-1.jpg">
         <div class="container">
              <div>
             <a href="/">Home</a>
