@@ -28,7 +28,7 @@ var htmlTemplate=`
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
     
-    <body background="http://www.charlottecomleystoryteller.co.uk/images/Webpage_Background_by_kierun.jpg">
+    <body background="http://1.bp.blogspot.com/-VdULbSGJ3I8/UBuq3kI0ChI/AAAAAAAAAxo/4m0VqJvsBFY/s1600/web-page-backgrounds-1.jpg">
         <div class="container">
              <div>
             <a href="/">Home</a>
