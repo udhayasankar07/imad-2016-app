@@ -45,7 +45,7 @@ var htmlTemplate=`
        
         <hr>
         <div>
-            ${date}
+            ${date.toDateString()}
         </div>
         
         <div>
