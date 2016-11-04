@@ -124,17 +124,13 @@ var submit = document.getElementById('login_btn');
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = 'Sucess!';
+                  alert("logged in Successfully");
               } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
+                  alert("Username/password incorrect");
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              }
-              loadLogin();
+                  
+              } 
           }  
           // Not done yet
         };
@@ -147,7 +143,7 @@ var submit = document.getElementById('login_btn');
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
-        submit.value = 'Logging in...';
+        
         
 };
 
