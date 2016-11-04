@@ -178,10 +178,10 @@ app.get('/logout', function (req, res) {
 
 
 
-app.get('/resume', function (req, res) {
+app.get('/index1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index1.html'));
 });
-app.get('/index1', function (req, res) {
+app.get('/resume', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'resume.html'));
 });
 
