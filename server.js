@@ -21,6 +21,7 @@ function createTemplate(data)
     var date=data.date;
     var content=data.content;
     var image=data.image;
+    var rating=data.rating;
 var htmlTemplate=`
 <html>
     <head>
@@ -54,7 +55,15 @@ var htmlTemplate=`
         
         
             ${content}
-         </div>`;
+         </div>
+         <hr>
+         
+         <div>
+         <h3> Rating </h3>
+         
+         ${rating`}
+         </div>
+         
          return htmlTemplate;
 }
 app.get('/', function (req, res) {
