@@ -29,7 +29,7 @@ var htmlTemplate=`
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
     
-    <body background="http://www.incomeactivator.com/images/freebg1.jpg">
+    <body background="http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSquares_1920x1234.jpg">
         <div class="container">
              <div>
             <a href="/">Home</a>
