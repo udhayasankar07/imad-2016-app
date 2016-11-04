@@ -114,8 +114,8 @@ window.onclick = function(event) {
 
 
 
-var submit = document.getElementById('login_btn');
-    submit.onclick = function () {
+var submit1 = document.getElementById('login_btn');
+    submit1.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
