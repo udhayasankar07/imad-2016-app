@@ -132,7 +132,7 @@ var submit1 = document.getElementById('login_btn');
                   
               } 
           }  
-          // Not done yet
+         
         };
         
         // Make the request
