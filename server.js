@@ -59,10 +59,10 @@ var htmlTemplate=`
          <hr>
          
          <div>
-         <h3> Rating </h3>
+         
          
          ${rating}
-         </div>;
+         </div>`;
          
          return htmlTemplate;
 }
