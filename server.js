@@ -60,7 +60,7 @@ var htmlTemplate=`
          
          <div>
          
-         
+         <h3> Rating </h3> <br>
          ${rating}
          </div>`;
          
