@@ -124,9 +124,9 @@ var submit = document.getElementById('login_btn');
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert("logged in Successfully");
+                  alert('logged in Successfully');
               } else if (request.status === 403) {
-                  alert("Username/password incorrect");
+                  alert('Username/password incorrect');
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   
