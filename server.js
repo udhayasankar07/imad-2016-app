@@ -20,6 +20,7 @@ function createTemplate(data)
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
+    var image=data.image;
 var htmlTemplate=`
 <html>
     <head>
@@ -39,7 +40,7 @@ var htmlTemplate=`
         </h1>
         
         <div >
-            <img src="/ui/madi.png" class="img-medium"/>
+             ${image}
         </div>
         
        
