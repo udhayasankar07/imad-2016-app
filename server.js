@@ -61,7 +61,7 @@ var htmlTemplate=`
          <div>
          <h3> Rating </h3>
          
-         ${rating`}
+         ${rating}
          </div>
          
          return htmlTemplate;
