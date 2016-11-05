@@ -179,7 +179,12 @@ app.get('/logout', function (req, res) {
 
 
 app.get('/home', function (req, res) {
+    if (req.session && req.session.auth && req.session.auth.userId)
+    {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    }
+    else
+     res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 });
 app.get('/resume', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'resume.html'));
