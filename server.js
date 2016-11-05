@@ -45,7 +45,7 @@ var htmlTemplate=`
         <div class="container">
              <div>
             <a href="/">Home</a>
-             <a href="/logout">logout</a>
+           
         </div>
             
         <h1> 
@@ -74,7 +74,10 @@ var htmlTemplate=`
          
          <h3> Rating </h3> 
          ${rating}
-         </div>`;
+         </div>
+         <hr>
+           <a href="/logout">logout</a>
+           `;
          
          return htmlTemplate;
 }
