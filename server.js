@@ -44,7 +44,7 @@ var htmlTemplate=`
     <body background="http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSquares_1920x1234.jpg">
         <div class="container">
              <div>
-            <a href="/">Home</a>
+            <a href="/home">Home</a>
            
         </div>
             
