@@ -259,7 +259,13 @@ app.get('/articles/:articleName', function (req, res) {
     else
     {
         var articleData=result.rows[0];
+        if (req.session && req.session.auth && req.session.auth.userId)
+        {
         res.send(createTemplate(articleData));
+        }
+        else
+         res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
+        
     }
     }   
    });
