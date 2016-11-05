@@ -123,7 +123,7 @@ function loginFunction () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('logged in Successfully');
+                 // alert('logged in Successfully');
                   windows.location.href='http://udhayasankar07.imad.hasura-app.io/';
               } else if (request.status === 403) {
                   alert('Username/password incorrect');
