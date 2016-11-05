@@ -116,10 +116,10 @@ app.post('/create-user', function (req, res) {
 
 
 app.post('/login/:input', function (req, res) {
-    var input=req.params.input.split('$');
+   var input=req.params.input.split('$');
    var username = input[0];
    var password = input[1];
-   
+   res.send(''+input);
    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
