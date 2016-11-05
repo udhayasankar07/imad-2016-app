@@ -78,7 +78,7 @@ var htmlTemplate=`
          return htmlTemplate;
 }
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 
 });
 
@@ -178,8 +178,8 @@ app.get('/logout', function (req, res) {
 
 
 
-app.get('/mylogin', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
+app.get('/home', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/resume', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'resume.html'));
