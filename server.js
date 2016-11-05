@@ -45,6 +45,7 @@ var htmlTemplate=`
         <div class="container">
              <div>
             <a href="/">Home</a>
+             <a href="/logout">logout</a>
         </div>
             
         <h1> 
