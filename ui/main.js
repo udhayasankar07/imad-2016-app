@@ -188,7 +188,6 @@ function logout(){
          
         };
         request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/logout', true);
-        request.setRequestHeader('Content-Type', 'application/json');
         request.send(null); 
 }
 
