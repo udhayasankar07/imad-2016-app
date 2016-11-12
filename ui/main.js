@@ -173,11 +173,24 @@ function registerFunction () {
         };
         request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/register/'+input, true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(null);  
-        
-        
+        request.send(null); 
 }
 
+function logout(){
+    var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                 window.location.href="http://udhayasankar07.imad.hasura-app.io/";
+              }
+          }  
+         
+        };
+        request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/register/'+input, true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(null); 
+}
 
 
 
