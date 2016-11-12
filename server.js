@@ -76,7 +76,7 @@ var htmlTemplate=`
          ${rating}
          </div>
          <hr>
-         <input type='button' value='Log out' onclick="logout()"/>
+        <a href="/logout">logout</a>
            
            `;
          
