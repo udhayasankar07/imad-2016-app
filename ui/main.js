@@ -176,7 +176,7 @@ function registerFunction () {
         console.log(username);
         console.log(password);
         var input=username+'$'+password;
-        request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/login/'+input, true);
+        request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/register/'+input, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(null);  
         
