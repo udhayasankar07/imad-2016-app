@@ -149,6 +149,41 @@ function loginFunction () {
 }
 
 
+function registerFunction () {
+        // Create a request object
+        var request = new XMLHttpRequest();
+        
+        // Capture the response and store it in a variable
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                 alert('logged in Successfully');
+                  window.location.href='http://udhayasankar07.imad.hasura-app.io/home';
+              } else if (request.status === 403) {
+                  alert('Username/password incorrect');
+              } else if (request.status === 500) {
+                  alert('Something went wrong on the server');
+                  
+              } 
+          }  
+         
+        };
+        
+        // Make the request
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        console.log(username);
+        console.log(password);
+        var input=username+'$'+password;
+        request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/login/'+input, true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(null);  
+        
+        
+}
+
+
 
 
 
