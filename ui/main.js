@@ -164,7 +164,6 @@ function registerFunction () {
               // Take some action
               if (request.status === 200) {
                  alert('User '+ username+' created successfully');
-                  window.location.href='http://udhayasankar07.imad.hasura-app.io/home';
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   
