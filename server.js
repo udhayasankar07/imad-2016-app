@@ -118,6 +118,23 @@ app.post('/create-user', function (req, res) {
    });
 });
 
+app.get('/register/:input', function (req, res) {
+   // username, password
+   // {"username": "tanmai", "password": "password"}
+   // JSON
+   var input = req.params.input.split('$');
+   var username =input[0];
+   var password = input[1];
+   var salt = crypto.randomBytes(128).toString('hex');
+   var dbString = hash(password, salt);
+   pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send('User successfully created: ' + username);
+      }
+   });
+});
 
 app.get('/login/:input', function (req, res) {
    var input=req.params.input.split('$');
