@@ -83,6 +83,12 @@ var htmlTemplate=`
 <!-- end htmlcommentbox.com -->
          <hr>
         <a href="/logout">logout</a>
+        <hr>
+        <script type="text/javascript" src="http://counter3.01counter.com/private/countertab.js?c=bab2f7e6e542e3fb0bc61127556fbdca"></script>
+<noscript><a href="http://www.freecounterstat.com" title="web counter"><img src="http://counter3.01counter.com/private/freecounterstat.php?c=bab2f7e6e542e3fb0bc61127556fbdca" border="0" title="web counter" alt="web counter"></a>
+</noscript>
+       
+       <a href="http://www.freecounterstat.com" title="web counter"><img src="http://counter3.01counter.com/private/freecounterstat.php?c=bab2f7e6e542e3fb0bc61127556fbdca" border="0" title="web counter" alt="web counter"></a>
            
            `;
          
