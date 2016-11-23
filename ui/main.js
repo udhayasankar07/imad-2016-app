@@ -142,12 +142,12 @@ function registerFunction () {
           }  
          
         };
-        if(username!=NULL&&password!=NULL)
-        {
+        
+        
         request.open('GET', 'http://udhayasankar07.imad.hasura-app.io/register/'+input, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(null);
-        }
+        
         
 }
 
