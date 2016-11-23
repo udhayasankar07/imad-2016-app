@@ -149,6 +149,10 @@ function registerFunction () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(null);
         }
+        else
+        {
+            alert('Enter a username and password');
+        }
         
         
 }
