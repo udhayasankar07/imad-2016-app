@@ -41,7 +41,7 @@ var htmlTemplate=`
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
     
-    <body background="http://blog.hostbaby.com/wp-content/uploads/2014/03/PaintSquares_1920x1234.jpg">
+    <body >
         <div class="container">
              <div>
             <a href="/home">Home</a>
