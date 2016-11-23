@@ -41,7 +41,7 @@ var htmlTemplate=`
         <link href="ui/style.css" rel="stylesheet"/>
     </head>
     
-    <body >
+    <body background="https://designm.ag/images/0809/ff2/8-full.jpg">
         <div class="container">
              <div>
             <a href="/home">Home</a>
