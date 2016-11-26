@@ -292,6 +292,42 @@ app.get('/articles/:articleName', function (req, res) {
   
 });
 
+app.get('/addcomments/:input', function (req, res) {
+    var commentText=req.params.input.toString();
+    var username=req.session.auth.name.toString();
+    pool.query("insert into comment(username,comment) values($1,$2)",[username,commentText],function(err,result)
+    {
+    if(err)
+    {
+        res.status(500).send(err.toString());
+    }
+    else
+    {
+        res.send('Comment Added');
+    }
+    });
+});
+
+
+
+app.get('/getcomments',function(req,res){
+    pool.query("select * from comment",function(err,result){
+       if(err){
+           
+       }else{
+           var count=result.rows.length;
+           var commentTable="<table style='text-align:left; margin:0px' class='content' width='100%'><tr><td width='30%'></td><td></td></tr>";
+           for(var i=0;i<count;i++){
+               commentTable+="<tr style='margin-bottom:10px'><td>"+result.rows[i].username+"</td><td><span style='display:block;word-wrap:break-word;'>"+result.rows[i].comment+"</span></td></tr>";
+           }
+           commentTable+="</table>";
+           res.send(""+commentTable);
+       }
+       
+    });
+});
+
+
 
 
 
