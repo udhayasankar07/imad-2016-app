@@ -195,6 +195,7 @@ function fetchComments(){
     request.send(null);
 }
 
+fetchComments();
 
 
 
