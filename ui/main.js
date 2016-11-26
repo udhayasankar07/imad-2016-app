@@ -74,7 +74,7 @@ function loginFunction () {
               if (request.status === 200) {
                   
                   window.location.href='http://udhayasankar07.imad.hasura-app.io/home';
-                  fetchComments();
+                 
                   
               } else if (request.status === 403) {
                   alert('Username/password incorrect');
