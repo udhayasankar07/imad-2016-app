@@ -1,4 +1,36 @@
-console.log('Loaded!');
+var loggedinFlag=false;
+var request=new XMLHttpRequest();
+var loggedinAs="";
+request.onreadystatechange=function()
+{
+    if(request.readyState===XMLHttpRequest.DONE)
+    {
+        if(request.status===200)
+        {   
+            loggedinFlag=true;
+            loggedinAs=request.responseText.toString().substring(13);
+        }else{
+            loggedinFlag=false;
+        }
+    }
+};
+request.open('GET','http://udhayasankar07.imad.hasura-app.io/checklogin',true);
+request.send(null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             var button=document.getElementById('counter');
             
             button.onclick=function()
