@@ -157,12 +157,10 @@ app.get('/login/:input', function (req, res) {
               if (hashedPassword === dbString) {
                 
                 // Set the session
-                req.session.auth = {userId: result.rows[0].id};
-                // set cookie with a session id
-                // internally, on the server side, it maps the session id to an object
-                // { auth: {userId }}
+                req.session.auth = {userId: result.rows[0].id,name : username};
+                 res.send("Logged in as "+username);
                 
-                res.send('credentials correct!');
+               
                 
               } else {
                 res.status(403).send('username/password is invalid');
@@ -178,20 +176,21 @@ app.get('/login/:input', function (req, res) {
 
 
 
-app.get('/check-login', function (req, res) {
-   if (req.session && req.session.auth && req.session.auth.userId) {
-       // Load the user object
-       pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
-           if (err) {
-              res.status(500).send(err.toString());
-           } else {
-              res.send(result.rows[0].username);    
-           }
-       });
-   } else {
-       res.status(400).send('You are not logged in');
-   }
+app.get('/checklogin',function(req,res){
+
+if(req.session && req.session.auth && req.session.auth.userId){
+
+res.send('Logged in as '+req.session.auth.name.toString());
+
+}else{
+
+res.status(403).send('You are not logged in');
+
+}
+
 });
+
+
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
