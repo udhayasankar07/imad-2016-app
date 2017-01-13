@@ -85,8 +85,8 @@ var htmlTemplate=`
          return htmlTemplate;
 }
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
-
+  res.send("Home Screen");
+  //res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 });
 
 
