@@ -84,13 +84,11 @@ var htmlTemplate=`
          
          return htmlTemplate;
 }
-app.get('/', function (req, res) {
-  res.send('Home Screen');
-  //res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
-});
 
-app.get('/check',function(req,res){
-   res.send('Senthil'); 
+app.get('/', function (req, res) {
+    var response='Success';
+    res.send(response);
+  //res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 });
 
 function hash (input, salt) {
