@@ -89,6 +89,9 @@ app.get('/', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 });
 
+app.get('/check',function(req,res){
+   res.send('Senthil'); 
+});
 
 function hash (input, salt) {
     // How do we create a hash?
