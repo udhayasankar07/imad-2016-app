@@ -86,9 +86,8 @@ var htmlTemplate=`
 }
 
 app.get('/', function (req, res) {
-    var response='Success';
-    res.status(200).send(response);
-  //res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
+   
+  res.sendFile(path.join(__dirname, 'ui', 'mylogin.html'));
 });
 
 function hash (input, salt) {
